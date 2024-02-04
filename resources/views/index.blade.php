@@ -28,7 +28,7 @@
                         <tr>
                             <th scope="row">{{$post->id}}</th>
                             <td>
-                                <img src="{{asset('storage/'.$post->image)}}" alt="crud-image" width="300px"/>
+                                <img src="{{asset('storage/'.$post->image)}}" alt="crud-image" width="300px" height="150px"/>
                             </td>
                             <td>{{$post->title}}</td>
                             <td>{{$post->description}}</td>
@@ -37,7 +37,7 @@
 
                             <td>
                                 <a href="#" class="btn-sm btn-success">Show</a>
-                                <a href="#" class="btn-sm btn-primary">Edit</a>
+                                <a href="{{route('post.edit', $post->id)}}" class="btn-sm btn-primary">Edit</a>
                                 <a href="#" class="btn-sm btn-danger">Delete</a>
 
                             </td>
