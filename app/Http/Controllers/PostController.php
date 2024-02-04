@@ -16,6 +16,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::select('posts.*')
+            ->orderBy('updated_at', 'desc')
             ->get();
         // $posts = Post::all();
         return view('index', compact('posts'));
@@ -62,7 +63,6 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-   
     }
 
     /**
