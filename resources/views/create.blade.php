@@ -8,8 +8,13 @@
         @endif
         <div class="card mt-4">
             <div class="card-header">
+                <div class="row">
+                    <div class="col-md-6">
                 <h1>Create Post</h1>
-                <a href="{{ route('post.index') }}" class="btn-sm btn-success">GO Back</a>
+                    </div>
+                    <div class="col-md-6 text-md-end"> 
+                <a href="{{ route('post.index') }}" class="btn btn-success btn-md">GO Back</a>
+                    </div>
             </div>
 
             <div class="card-body">
